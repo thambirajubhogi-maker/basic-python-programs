@@ -1,0 +1,17 @@
+def product_of_odds(m, n):
+    if m < n:
+        return 0
+    
+    product = 1
+    for num in range(n, m + 1): 
+        if num % 2 != 0:  
+            product *= num
+    
+    return product
+m = 9
+n = 3
+result = product_of_odds(m, n)
+print(f"Product of all odd numbers between {n} and {m} is: {result}")
+m2, n2 = 2, 5
+result2 = product_of_odds(m2, n2)
+print(f"Result when m < n ({m2} < {n2}): {result2}")
