@@ -1,0 +1,21 @@
+def product_of_evens(m, n):
+    if m < n:
+        return 0
+    
+    product = 1
+    for num in range(n, m + 1):
+        if num % 2 == 0:
+            product *= num
+    
+    return product
+
+m = 10
+n = 2
+
+result = product_of_evens(m, n)
+print(f"Product of all even numbers between {n} and {m} is: {result}")
+
+# Case where m < n:
+m2, n2 = 3, 7
+result2 = product_of_evens(m2, n2)
+print(f"Result when m < n ({m2} < {n2}): {result2}")
