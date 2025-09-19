@@ -1,0 +1,13 @@
+import math
+def sum_factorials(m, n):
+    def sum_factorials(m, n):
+        start, end = min(m, n), max(m, n)
+        total = 0
+        for i in range(start, end + 1):
+            total += math.factorial(i)
+            return total
+m = 7
+n = 2
+
+result = sum_factorials(m, n)
+print(f"Sum of factorials from {m} to {n} is: {result}")
